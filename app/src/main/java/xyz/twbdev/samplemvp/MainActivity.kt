@@ -2,7 +2,7 @@ package xyz.twbdev.samplemvp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import xyz.twbdev.samplemvp.news.NewsView
+import xyz.twbdev.samplemvp.count.CountDownView
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         supportFragmentManager.beginTransaction()
-                .replace(R.id.content_container, NewsView.newInstance())
+                .replace(R.id.content_container, CountDownView.newInstance())
                 .commit()
     }
 }
